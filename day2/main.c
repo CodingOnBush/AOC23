@@ -7,7 +7,7 @@ int	main(void)
 	int		res;
 
 	fd = open("input", O_RDONLY);
-	if (fd == -1)
+	if (fd < 0)
 		return (0);
 	res = 0;
 	while ((line = get_next_line(fd)) != NULL)

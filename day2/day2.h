@@ -20,8 +20,14 @@ typedef struct s_node
 	struct s_node	*next;
 }					t_node;
 
-int	ft_atoi(const char *str);
-int	ft_get_gameid(char *line);
+typedef struct s_set
+{
+	int	red;
+	int	green;
+	int	blue;
+}		t_set;
+
+// int	ft_atoi(const char *str);
 char	*ft_create_str(t_node *lst);
 char	*ft_get_after_nl(char *str);
 int		ft_get_len(t_node *lst);
@@ -36,14 +42,15 @@ void	ft_update_lst(t_node **lst);
 char    *get_next_line(int fd);
 int		ft_createlst(int fd, t_node **lst);
 void	ft_freelst(t_node **lst);
-void	ft_putchar(char c);//delete
-void	ft_putlst(t_node *lst);//delete
-void	ft_putstr(char *str);//delete
 
 int	ft_isdigit(int c);
-int	ft_get_first(char *line);
-int	ft_get_last(char *line);
-int	ft_is_game_valid(char *line);
 
+int 	ft_isalpha(int c);
+int		ft_strcmp(const char *s1, const char *s2);
+char	ft_get_next_color(char **str);
+int		ft_get_next_nb(char **str);
+void	ft_update_set(t_set *set, char color, int nb);
+int		ft_is_valid_set(t_set *set);
+int	ft_is_game_valid(char *line);
 
 #endif

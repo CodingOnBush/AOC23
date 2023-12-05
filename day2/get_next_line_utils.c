@@ -78,16 +78,6 @@ char	*ft_strchr(char *s, int c)
 	return (0);
 }
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
 char	*ft_strdup(char *s, int len)
 {
 	char	*out;
