@@ -2,7 +2,7 @@
 
 int	ft_check_around(char **map, int i, int j)
 {
-	while (ft_isdigit(map[i][j]))
+	while (ft_isdigit(map[i][j]) && map[i][j] != '\0')
 	{
 		if (ft_check_right(map, i, j))
 			return (1);

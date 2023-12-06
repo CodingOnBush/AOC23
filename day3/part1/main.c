@@ -32,10 +32,11 @@ int	main(void)
 	map[LINE] = NULL;
 	ft_fill_map(map);
 	i = 0;
+	res = 0;
 	while (i < LINE)
 	{
 		j = 0;
-		printf("\n\n%s", map[i]);
+		// printf("\n\n%s", map[i]);
 		printf("[i = %d] : ", i + 1);
 		while (map[i][j] != '\0')
 		{
@@ -55,6 +56,7 @@ int	main(void)
 			else
 				j++;
 		}
+		printf("\n");
 		i++;
 	}
 	printf("\nres = %d\n", res);
@@ -62,6 +64,6 @@ int	main(void)
 }
 
 /*
-525120
+tentative 1 : 525120
 
 */
