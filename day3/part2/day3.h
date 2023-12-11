@@ -31,8 +31,13 @@ char	*ft_strchr(char *s, int c);
 char	*ft_strdup(char *s, int len);
 
 void	ft_fill_map(char **map);
-int		ft_get_full_nb(char **map, int i, int j);
+long		ft_get_full_nb(char **map, int i, int j);
 int		ft_isdigit(int c);
+
+long	get_current_nb(char **map, int line, int col);
+long	get_down_nb(char **map, int line, int col);
+long	get_up_nb(char **map, int line, int col);
+
 // int		ft_is_symbol(char c);
 // int		ft_get_nb_len(int nb);
 

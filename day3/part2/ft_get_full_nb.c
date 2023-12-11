@@ -1,8 +1,8 @@
 #include "day3.h"
 
-int	ft_get_full_nb(char **map, int i, int j)
+long	ft_get_full_nb(char **map, int i, int j)
 {
-	int	res;
+	long	res;
 
 	if (!map || !*map)
 		return (0);
