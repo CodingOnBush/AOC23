@@ -6,7 +6,7 @@ void	ft_fill_map(char **map)
 	char	*line;
 	int		i;
 
-	fd = open("input.txt", O_RDONLY);
+	fd = open("input2.txt", O_RDONLY);
 	if (fd == -1)
 		return ;
 	i = 0;

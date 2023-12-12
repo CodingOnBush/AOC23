@@ -1,7 +1,7 @@
 #ifndef DAY2_H
 # define DAY2_H
 
-# define LINE 140
+# define LINE 3
 
 # ifndef BUFFER_SIZE
 # 	define BUFFER_SIZE 100
@@ -33,6 +33,10 @@ char	*ft_strdup(char *s, int len);
 void	ft_fill_map(char **map);
 long		ft_get_full_nb(char **map, int i, int j);
 int		ft_isdigit(int c);
+
+int	check_up(char **map, int line, int col);
+int	check_down(char **map, int line, int col);
+int	check_current(char **map, int line, int col);
 
 long	get_current_nb(char **map, int line, int col);
 long	get_down_nb(char **map, int line, int col);
